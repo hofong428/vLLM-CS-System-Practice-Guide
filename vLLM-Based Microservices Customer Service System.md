@@ -26,8 +26,8 @@ Designing a microservices-based customer service system leveraging **vLLM** (a h
 6. [Scaling Considerations](#6-scaling-considerations)
 7. [Security Best Practices](#7-security-best-practices)
 8. [Technologies and Tools](#8-technologies-and-tools)
-9. [Conclusion](#9-Architecture Components)
-10. [Further Resources](#10-Architecture Diagram)
+9. [Architecture Components](#9-Architecture Components)
+10. [Architecture Diagram](#10-Architecture Diagram)
 
 ------
 
