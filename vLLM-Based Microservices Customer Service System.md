@@ -48,9 +48,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Serves large language models (e.g., GPT variants) for natural language understanding and generation.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - Efficiently handle inference requests.
   - Manage model loading and memory optimization.
@@ -60,9 +58,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Acts as the single entry point for all client requests.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Request routing.
   - Load balancing.
@@ -73,9 +69,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Manages user authentication and authorization.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - User registration and login.
   - Token generation (e.g., JWT).
@@ -85,9 +79,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Maintains user sessions and conversational context.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Store and retrieve session states.
   - Manage conversation history.
@@ -97,9 +89,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Implement specific business functionalities.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Ticket creation and tracking.
   - Knowledge base queries.
@@ -109,9 +99,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Provides user interfaces for customers to interact with the system.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Web and mobile application development.
   - Real-time communication (e.g., WebSockets).
@@ -121,9 +109,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Store persistent data required by various services.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - User data storage.
   - Session and context storage.
@@ -133,9 +119,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Track system performance and log events for debugging and analytics.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Collect metrics (CPU, memory, response times).
   - Aggregate and store logs.
@@ -145,9 +129,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Automate the build, testing, and deployment processes.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Continuous integration of code changes.
   - Automated testing (unit, integration).
@@ -157,9 +139,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Manage deployment, scaling, and operation of containerized services.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Service discovery.
   - Load balancing.
@@ -197,9 +177,7 @@ The proposed customer service system is architected as a collection of microserv
 
 1. **Dockerization**:
 
-   - Dockerize Each Service
-
-     :
+   - Dockerize Each Service  :
 
      - Create `Dockerfile` for each microservice.
      - Ensure minimal base images (e.g., `python:3.9-slim`).
@@ -223,9 +201,7 @@ The proposed customer service system is architected as a collection of microserv
 
 3. **Orchestration Platform**:
 
-   - Kubernetes Setup
-
-     :
+   - Kubernetes Setup :
 
      - Deploy a Kubernetes cluster using managed services or self-managed solutions.
      - Configure cluster autoscaling based on load.
@@ -410,23 +386,17 @@ The proposed customer service system is architected as a collection of microserv
 
 2. **Implementation**:
 
-   - User Registration & Login
-
-     :
+   - User Registration & Login :
 
      - Implement endpoints for user sign-up and sign-in.
      - Validate user credentials against the database.
 
-   - Token Generation
-
-     :
+   - Token Generation :
 
      - Generate JWT tokens upon successful authentication.
      - Define token expiry and refresh mechanisms.
 
-   - Role-Based Access Control (RBAC)
-
-     :
+   - Role-Based Access Control (RBAC) :
 
      - Assign roles and permissions to users.
      - Protect sensitive endpoints based on roles.
@@ -1028,9 +998,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Acts as the single entry point for all client requests.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - Request routing
   - Load balancing
@@ -1041,9 +1009,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Manages user authentication and authorization.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - User registration and login
   - JWT token generation and validation
@@ -1053,9 +1019,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Maintains user sessions and conversational context.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Store and retrieve session states
   - Manage conversation history
@@ -1071,9 +1035,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Role**: Provides language model inferences for natural language understanding and generation.
 
-- Responsibilities
-
-  :
+- Responsibilities :
 
   - Handle high-throughput inference requests
   - Optimize memory and compute resource usage
@@ -1097,9 +1059,7 @@ The proposed customer service system is architected as a collection of microserv
 
 - **Tools**: GitHub Actions, Jenkins, GitLab CI/CD.
 
-- Responsibilities
-
-  :
+- Responsibilities  :
 
   - Automate build, test, and deployment processes
   - Ensure continuous integration and delivery
@@ -1245,31 +1205,23 @@ To transform the above textual description into a visual diagram, follow these s
 
    - **Top Layer**: Client Layer (Web, Mobile, Chat)
 
-   - Middle Layers
-
-     :
+   - Middle Layers   :
 
      - API Gateway
      - Authentication Service
      - Session Management Service
 
-   - Lower Middle Layer
-
-     :
+   - Lower Middle Layer  :
 
      - Business Logic Services
      - vLLM Service
 
-   - Bottom Layer
-
-     :
+   - Bottom Layer  :
 
      - Databases
      - Monitoring & Logging
 
-   - Side Components
-
-     :
+   - Side Components :
 
      - CI/CD Pipeline
      - Container Orchestration
