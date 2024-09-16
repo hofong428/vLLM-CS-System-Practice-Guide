@@ -4,32 +4,6 @@ Designing a microservices-based customer service system leveraging **vLLM** (a h
 
 ------
 
-## Table of Contents
-
-1. [System Overview](#1-system-overview)
-2. [Architecture Diagram](#2-architecture-diagram)
-3. [Core Components](#3-core-components)
-4. Detailed Implementation Steps
-   - [4.1. Infrastructure Setup](#41-infrastructure-setup)
-   - [4.2. Containerization and Orchestration](#42-containerization-and-orchestration)
-   - [4.3. Setting Up vLLM](#43-setting-up-vllm)
-   - [4.4. API Gateway](#44-api-gateway)
-   - [4.5. Authentication Service](#45-authentication-service)
-   - [4.6. Customer Service Frontend](#46-customer-service-frontend)
-   - 4.7. Backend Services
-     - [Session Management](#session-management)
-     - [Business Logic](#business-logic)
-   - [4.8. Databases](#48-databases)
-   - [4.9. Monitoring and Logging](#49-monitoring-and-logging)
-   - [4.10. CI/CD Pipeline](#410-ci-cd-pipeline)
-5. [Integration and Communication](#5-integration-and-communication)
-6. [Scaling Considerations](#6-scaling-considerations)
-7. [Security Best Practices](#7-security-best-practices)
-8. [Technologies and Tools](#8-technologies-and-tools)
-9. [Architecture Components](#9-Architecture Components)
-10. [Architecture Diagram](#10-Architecture Diagram)
-
-------
 
 ## 1. System Overview
 
