@@ -18,14 +18,6 @@ CI/CD Pipeline
 Container Orchestration
 Security Components
 Optional Message Queue
-Connect Components:
-
-Draw arrows from the Client Layer to the API Gateway.
-From API Gateway, draw arrows to Authentication Service, Session Management Service, and Business Logic Services.
-Connect Business Logic Services to vLLM Service and Databases.
-Link Monitoring & Logging, CI/CD Pipeline, and Container Orchestration appropriately to the services they monitor or deploy.
-Ensure Security Components are linked to all relevant communication paths.
-If using a Message Queue, connect it between Business Logic Services as needed.
 
 Containerization
 Dockerize Each Service: Create Docker images for all microservices, ensuring consistent environments across deployments.
